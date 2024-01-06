@@ -75,14 +75,14 @@ aside {
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
-        color: $theme-primary;
+        color: $theme-dark;
         @include sans-serif-font;
         font-weight: 700;
         font-size: xx-large;
         text-transform: uppercase;
         &:hover,
         &:focus {
-            color: darken($theme-primary, 10%);
+            color: darken($theme-dark, 10%);
         }
     }
     .nav {
@@ -156,12 +156,12 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('../img/header.jpg_large');
-    text-align: left;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .7)), url('../img/header.jpg_large');
+    text-align: center;
     color: white;
     .header-content {
         position: relative;
-        text-align: left;
+        text-align: center;
         padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
@@ -170,7 +170,6 @@ header {
                 text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
-                margin-left: 0;
                 color: rgba(white, .7)
             }
             hr {
@@ -195,10 +194,12 @@ header {
             padding: 0 50px;
             .header-content-inner {
                 max-width: 1000px;
+                margin-left: auto;
                 margin-right: auto;
                 p {
                     font-size: 18px;
                     max-width: 80%;
+                    margin-left: auto;
                     margin-right: auto;
                 }
             }
